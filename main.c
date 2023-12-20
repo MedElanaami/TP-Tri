@@ -12,7 +12,7 @@
 
 #define taille 10
 int main() {
-    /*
+    
     // Tableau a trier
     int tab[taille];
 // ------------------------------------------------
@@ -119,14 +119,12 @@ int main() {
                                     CLOCKS_PER_SEC;
     // Print the elapsed time
     printf("\nTemps d'executuon pour TRI RAPIDE: %f seconds\n",
-           tempsTri_Rapide);*/
+           tempsTri_Rapide);
 
 // ------------------------------------------------
 //Cree liste chainee
     Cellule *liste= NULL;
     printf("------------------------------------------------\n");
-    clock_t temps_depart = clock();
-    clock_t temps_fin = clock();
     ///Tri a bulle Liste chainee
     printf("\n \t\tTRI A BULLES LISTE CHAINEE\n");
 
