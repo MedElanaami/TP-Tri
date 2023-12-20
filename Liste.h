@@ -1,15 +1,8 @@
-//
-// Created by med on 12/19/2023.
-//
-
 #ifndef TP_TRI_LISTE_H
 #define TP_TRI_LISTE_H
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
-
 
 //Structure liste chainee
 typedef struct Liste {
@@ -28,8 +21,6 @@ Cellule *CreeCellule(int val){
     cellule->suivant = NULL;
     return cellule;
 }
-
-
 
 //Fonction affichage liste chainee
 void afficheListe(Cellule *liste){

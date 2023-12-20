@@ -10,6 +10,7 @@
 #include "initTab.h"
 #include "Liste.h"
 
+/***************Tab***************/
 //Fonction tri par extraction tableau
 void triExtraction(int *tab, int taille){
     //Affichage tableau avant tri
@@ -35,7 +36,7 @@ void triExtraction(int *tab, int taille){
     printf("\nNombre d'iteration: %d\n", iteration);
 
 };
-
+/***************Liste***************/
 //Fonction tri par extraction Liste  chainee
 void triExtractionListe(Cellule *liste){
     //Affichage liste avant tri
@@ -68,12 +69,44 @@ void triExtractionListe(Cellule *liste){
 
 //Fonction tri par extraction arbre binaire
 //Structure arbre binaire
-typedef struct noeud{
+typedef struct Noeud{
     int valeur;
-    struct noeud *gauche;
-    struct noeud *droit;
+    struct Noeud *gauche;
+    struct Noeud *droit;
 }Noeud;
 
+// Function to display the binary search tree level by level
+void afficheArbreBinaireNiveau(Noeud *arbre, int niveau) {
+    if (arbre == NULL)
+        return;
+
+    if (niveau == 1)
+        printf("%d ", arbre->valeur);
+    else if (niveau > 1) {
+        afficheArbreBinaireNiveau(arbre->gauche, niveau - 1);
+        afficheArbreBinaireNiveau(arbre->droit, niveau - 1);
+    }
+}
+
+// Function to get the height of the binary search tree
+int hauteurArbreBinaire(Noeud *arbre) {
+    if (arbre == NULL)
+        return 0;
+    else {
+        int hauteurGauche = hauteurArbreBinaire(arbre->gauche);
+        int hauteurDroit = hauteurArbreBinaire(arbre->droit);
+
+        return (hauteurGauche > hauteurDroit) ? (hauteurGauche + 1) : (hauteurDroit + 1);
+    }
+}
+
+// Function to display the binary search tree
+void afficheArbreBinaire(Noeud *arbre) {
+    int hauteur = hauteurArbreBinaire(arbre);
+    for (int i = 1; i <= hauteur; i++) {
+        afficheArbreBinaireNiveau(arbre, i);
+    }
+}
 //Fonction d'insertion dans un arbre binaire
 Noeud *insertionArbreBinaire(Noeud *arbre, int valeur){
     if(arbre == NULL){
@@ -91,16 +124,27 @@ Noeud *insertionArbreBinaire(Noeud *arbre, int valeur){
     return arbre;
 }
 
-//Fonction d'affichage d'un arbre binaire
-void afficheArbreBinaire(Noeud *arbre){
-    if(arbre != NULL){
-        afficheArbreBinaire(arbre->gauche);
-        printf("%d ", arbre->valeur);
-        afficheArbreBinaire(arbre->droit);
+Noeud *descend(Noeud *arbre)
+{
+    if ( (arbre->gauche) && (arbre->valeur > arbre->gauche->valeur)  )
+        echange(&arbre->valeur,&arbre->valeur);
+    if ( (arbre->droit) && (arbre->valeur > arbre->droit->valeur)  )
+        echange(    &arbre->valeur,  &arbre->valeur);
+    return((Noeud*)arbre);
+}
+Noeud *Construire (Noeud *arbre)
+{
+    if (arbre)
+    {
+        arbre->gauche= Construire(arbre->gauche);
+        arbre=descend(arbre);
+        arbre->droit= Construire(arbre->droit);
     }
+    return ((Noeud*)arbre);
 }
 
-//Fonction de recherche d'un noeud dans un arbre binaire
+
+//Fonction de recherche d'un Noeud dans un arbre binaire
 Noeud *rechercheArbreBinaire(Noeud *arbre, int valeur){
     if(arbre == NULL){
         return NULL;
@@ -115,7 +159,7 @@ Noeud *rechercheArbreBinaire(Noeud *arbre, int valeur){
     }
 }
 
-//Fonction de suppression d'un noeud dans un arbre binaire
+//Fonction de suppression d'un Noeud dans un arbre binaire
 Noeud *suppressionArbreBinaire(Noeud *arbre, int valeur){
     if(arbre == NULL){
         return NULL;
@@ -151,36 +195,58 @@ Noeud *suppressionArbreBinaire(Noeud *arbre, int valeur){
     return arbre;
 }
 
-//Fonction de tri par extraction arbre binaire
-void triExtractionArbreBinaire(Cellule *liste){
-    //Affichage liste avant tri
-    printf("Liste avant tri: \t\t\t");
-    afficheListe(liste);
-    //Affichage liste apres tri
-    int iteration = 0;
-    Cellule *temp = liste;
-    Noeud *arbre = NULL;
-    while(temp != NULL){
-        arbre = insertionArbreBinaire(arbre, temp->valeur);
-        temp = temp->suivant;
+// Function to perform in-order traversal and print the elements
+void inOrderTraversal(Noeud *arbre) {
+    if (arbre != NULL) {
+        inOrderTraversal(arbre->gauche);
+        printf("%d ", arbre->valeur);
+        inOrderTraversal(arbre->droit);
     }
-    while(arbre != NULL){
-        Noeud *min = arbre;
-        while(min->gauche != NULL){
-            min = min->gauche;
-        }
-        iteration++;
-        printf("\nIteration num %d : Echange %d et %d\t",
-               iteration,
-               arbre->valeur, min->valeur);
-        echange(&arbre->valeur, &min->valeur);
-        afficheListe(liste);
-        arbre = suppressionArbreBinaire(arbre, min->valeur);
-    }
-    //Affichage nombre d'iteration
-    printf("\nNombre d'iteration: %d\n", iteration);
-};
+}
 
+//Fonction tri par extraction arbre binaire
+
+// Function for Binary Tree Sort
+void triExtractionArbreBinaire(Noeud *arbre) {
+    // Create an empty binary search tree
+    Noeud *sortedTree = NULL;
+    int iteration = 1;
+    // Insert elements from the original tree into the new tree
+    while (arbre != NULL) {
+        sortedTree = insertionArbreBinaire(sortedTree, arbre->valeur);
+
+        // Display the current state
+        printf("\n\nArbre binaire apres %dme iteration: ", iteration);
+
+       // printf("\nNombre d'iteration: %d\n", iteration);
+
+        printf("\n\nIteration num %d\t\t\t",
+               iteration);
+        afficheArbreBinaire(sortedTree);
+        arbre = suppressionArbreBinaire(arbre, arbre->valeur);
+        iteration++;
+    }
+
+    // Perform in-order traversal to get the sorted order
+    printf("\nArbre trie par extraction: ");
+    afficheArbreBinaire(sortedTree);
+    printf("\n");
+}
+//void triExtractionArbreBinaire(Noeud *arbre) {
+//    // Create an empty binary search tree
+//    Noeud *sortedTree = NULL;
+//
+//    // Insert elements from the original tree into the new tree
+//    while (arbre != NULL) {
+//        sortedTree = insertionArbreBinaire(sortedTree, arbre->valeur);
+//        arbre = suppressionArbreBinaire(arbre, arbre->valeur);
+//    }
+//
+//    // Perform in-order traversal to get the sorted order
+//    printf("Sorted order after Binary Tree Sort: ");
+//    inOrderTraversal(sortedTree);
+//    printf("\n");
+//}
 
 
 #endif //TP_TRI_TRIEXTRACTION_H

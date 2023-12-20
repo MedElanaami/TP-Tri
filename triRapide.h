@@ -4,7 +4,7 @@
 #include "fonctions.h"
 #include "Liste.h"
 
-///Tri rapide a l'aide de la fonction partition et tableaux
+///Tableaux
 //Fonction partition
 int partition(int gauche ,int droit , int *tab){
     int pivot = tab[droit];
@@ -34,7 +34,7 @@ void triRapide(int gauche, int droit , int *tab){
 
 };
 
-///Tri rapide a l'aide de la fonction partition et liste chainee
+///Tri liste chainee
 
 Cellule * valeur_Indice(Cellule *liste, int indice)
 {
@@ -88,7 +88,8 @@ Cellule * Tri_Rapide_ptr(Cellule * liste, int i, int j)
     k = partition_liste(liste, i, j, pivot);
 
     printf("\n ");
-    printf("---------------iteration  ----------\n");
+    printf("Le pivot %d\n",pivot);
+    printf("---------------Echange----------\n");
 
     afficheListe(liste);
 // Tri récursif des sous-listes à gauche et à droite du pivot
