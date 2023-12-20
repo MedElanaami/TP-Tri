@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/main.c" "CMakeFiles/TP_Tri.dir/main.c.obj" "gcc" "CMakeFiles/TP_Tri.dir/main.c.obj.d"
+  "D:/Documents/Ilisi/S1/GITHUB/TP-Tri/main.c" "CMakeFiles/TP_Tri.dir/main.c.obj" "gcc" "CMakeFiles/TP_Tri.dir/main.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

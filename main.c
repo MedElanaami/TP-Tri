@@ -7,7 +7,7 @@
 #include "triRapide.h"
 #include "initTab.h"
 #include "Liste.h"
-
+#include "triExtraction.h"
 
 
 #define taille 10
@@ -123,7 +123,7 @@ int main() {
 
 // ------------------------------------------------
 //Cree liste chainee
-    Cellule *liste = NULL;
+    Cellule *liste= NULL;
     printf("------------------------------------------------\n");
     clock_t temps_depart = clock();
     clock_t temps_fin = clock();
@@ -133,9 +133,8 @@ int main() {
     //Initialisation liste chainee
     liste =NULL;
     for(int i = 0; i < taille; i++){
-        liste = insertionEnTete(liste, taille - i);
+        liste = insertionEnTete(liste,  i);
     }
-    afficheListe(liste);
     // Record the start time
     temps_depart = clock();
     //Tri a bulles liste chainee
@@ -157,9 +156,8 @@ int main() {
 //Initialisation liste chainee
     liste =NULL;
     for(int i = 0; i < taille; i++){
-        liste = insertionEnTete(liste, taille - i);
+        liste = insertionEnTete(liste,  i);
     }
-    afficheListe(liste);
     // Record the start time
     temps_depart = clock();
     //Tri a insertion liste chainee
@@ -181,10 +179,9 @@ int main() {
     //Initialisation liste chainee
     liste =NULL;
     for(int i = 0; i < taille; i++){
-        liste = insertionEnTete(liste, taille - i);
+        liste = insertionEnTete(liste,  i);
     }
-    afficheListe(liste);
-
+    
     // Record the start time
     temps_depart = clock();
     //Tri a selection liste chainee
@@ -207,24 +204,77 @@ int main() {
     //Initialisation liste chainee
     liste =NULL;
     for(int i = 0; i < taille; i++){
-        liste = insertionEnTete(liste, taille - i);
+        liste = insertionEnTete(liste,  i);
     }
     afficheListe(liste);
 
     // Record the start time
     temps_depart = clock();
     //Tri a rapide liste chainee
-    triRapideListe(liste, liste);
+    Tri_Rapide_ptr(liste, 0, 9);
     // Record the end time
     temps_fin = clock();
     // Calculate the elapsed time in seconds
     double tempsTri_Rapide_Liste = ((double) (temps_fin - temps_depart)) /
                                           CLOCKS_PER_SEC;
-
+    afficheListe(liste);
     // Print the elapsed time
     printf("\nTemps d'executuon pour TRI RAPIDE LISTE CHAINEE: %f seconds\n",
            tempsTri_Rapide_Liste);
 
+
+// ------------------------------------------------
+    printf("------------------------------------------------\n");
+    ///Tri par extraction Liste chainee
+    printf("\n \t\tTRI PAR EXTRACTION LISTE CHAINEE\n");
+
+    //Initialisation liste chainee
+    liste =NULL;
+    for(int i = 0; i < taille; i++){
+        liste = insertionEnTete(liste,  i);
+    }
+    afficheListe(liste);
+
+    // Record the start time
+    temps_depart = clock();
+    //Tri a extraction liste chainee
+    triExtractionListe(liste);
+    // Record the end time
+    temps_fin = clock();
+    // Calculate the elapsed time in seconds
+    double tempsTri_Extraction_Liste = ((double) (temps_fin - temps_depart)) /
+                                          CLOCKS_PER_SEC;
+    afficheListe(liste);
+    // Print the elapsed time
+    printf("\nTemps d'executuon pour TRI PAR EXTRACTION LISTE CHAINEE: %f seconds\n",
+           tempsTri_Extraction_Liste);
+
+
+// ------------------------------------------------
+    printf("------------------------------------------------\n");
+    ///Tri par extraction Arbre binaire
+    printf("\n \t\tTRI PAR EXTRACTION ARBRE BINAIRE\n");
+
+   //Inisialition arbre binaire
+
+    Noeud *arbre = NULL;
+    for(int i = 0; i < taille; i++){
+        arbre = insertionArbreBinaire(arbre, i);
+    }
+    afficheArbreBinaire(arbre);
+    // Record the start time
+    temps_depart = clock();
+    //Tri a extraction arbre binaire
+    triExtractionArbreBinaire(arbre);
+    // Record the end time
+    temps_fin = clock();
+    // Calculate the elapsed time in seconds
+    double tempsTri_Extraction_Arbre_Binaire = ((double) (temps_fin - temps_depart)) /
+                                          CLOCKS_PER_SEC;
+    afficheArbreBinaire(arbre);
+    // Print the elapsed time
+    printf("\nTemps d'executuon pour TRI PAR EXTRACTION ARBRE BINAIRE: %f seconds\n",
+           tempsTri_Extraction_Arbre_Binaire);
 
     return 0;
 }

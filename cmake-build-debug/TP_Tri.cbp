@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug"/>
+				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TP_Tri">
-				<Option output="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/TP_Tri.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug"/>
+				<Option output="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/TP_Tri.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -30,15 +30,15 @@
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP_Tri"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP_Tri"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TP_Tri/fast">
-				<Option output="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/TP_Tri.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug"/>
+				<Option output="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/TP_Tri.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -49,61 +49,64 @@
 					<Add directory="C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP_Tri/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP_Tri/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug"/>
+				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug"/>
+				<Option working_dir="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/Liste.h">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/Liste.h">
 			<Option target="TP_Tri"/>
 		</Unit>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/fonctions.h">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/fonctions.h">
 			<Option target="TP_Tri"/>
 		</Unit>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/initTab.h">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/initTab.h">
 			<Option target="TP_Tri"/>
 		</Unit>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/main.c">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/main.c">
 			<Option target="TP_Tri"/>
 		</Unit>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/triBulles.h">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/triBulles.h">
 			<Option target="TP_Tri"/>
 		</Unit>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/triBullesAmeliore.h">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/triBullesAmeliore.h">
 			<Option target="TP_Tri"/>
 		</Unit>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/triInsertion.h">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/triExtraction.h">
 			<Option target="TP_Tri"/>
 		</Unit>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/triRapide.h">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/triInsertion.h">
 			<Option target="TP_Tri"/>
 		</Unit>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/triSelection.h">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/triRapide.h">
 			<Option target="TP_Tri"/>
 		</Unit>
-		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/CMakeLists.txt">
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/triSelection.h">
+			<Option target="TP_Tri"/>
+		</Unit>
+		<Unit filename="D:/Documents/Ilisi/S1/GITHUB/TP-Tri/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

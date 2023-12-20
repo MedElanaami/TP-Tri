@@ -12,4 +12,5 @@ add_executable(TP_Tri main.c
         fonctions.h
         initTab.h
         Liste.h
+        triExtraction.h
 )

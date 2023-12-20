@@ -61,26 +61,19 @@ Cellule *insertionEnQueue(Cellule *liste, int val){
     temp->suivant = cellule;
     return liste;
 }
-//Fonction Vider liste
-Cellule *viderListe(Cellule *liste){
-    Cellule *temp = liste;
-    if(liste == NULL){
-        return NULL;
-    }
-    while(temp != NULL){
-        Cellule *temp2 = temp->suivant;
-        free(temp);
-        temp = temp2;
-    }
-    return NULL;
-}
+
 
 //Initialisation liste chainee
 Cellule *initialisationListe(Cellule *liste,int taille){
 
     for(int i = 0; i < taille; i++){
-        liste = insertionEnTete(liste, taille - i);
+        liste = insertionEnTete(liste,  i);
     }
+    return liste;
+}
+
+Cellule * videListe(Cellule *liste){
+    liste = NULL;
     return liste;
 }
 

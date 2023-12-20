@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TP_Tri::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TP_Tri-Debug-775f88a1c980da52dab7.json",
+					"jsonFile" : "target-TP_Tri-Debug-7eab38f8d8e6fe7b9089.json",
 					"name" : "TP_Tri",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug",
-		"source" : "D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri"
+		"build" : "D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug",
+		"source" : "D:/Documents/Ilisi/S1/GITHUB/TP-Tri"
 	},
 	"version" : 
 	{

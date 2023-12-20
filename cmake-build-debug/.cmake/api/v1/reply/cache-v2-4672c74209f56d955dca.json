@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug"
+			"value" : "d:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -475,7 +475,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -547,7 +547,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri"
+			"value" : "D:/Documents/Ilisi/S1/GITHUB/TP-Tri"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug"
+			"value" : "D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug"
 		},
 		{
 			"name" : "TP_Tri_IS_TOP_LEVEL",
@@ -1191,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri"
+			"value" : "D:/Documents/Ilisi/S1/GITHUB/TP-Tri"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

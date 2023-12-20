@@ -1,4 +1,4 @@
-# Install script for directory: D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri
+# Install script for directory: D:/Documents/Ilisi/S1/GITHUB/TP-Tri
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Documents/Ilisi/S1/GITHUB/SDD-ILISI/TP-Tri/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Documents/Ilisi/S1/GITHUB/TP-Tri/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
