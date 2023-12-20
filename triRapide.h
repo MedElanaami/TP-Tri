@@ -2,9 +2,9 @@
 #ifndef TP_TRI_TRIRAPIDE_H
 #define TP_TRI_TRIRAPIDE_H
 #include "fonctions.h"
-#include "liste.h"
+#include "Liste.h"
 
-//Tri rapide a l'aide de la fonction partition et tableaux
+///Tri rapide a l'aide de la fonction partition et tableaux
 //Fonction partition
 int partition(int gauche ,int droit , int *tab){
     int pivot = tab[droit];
@@ -34,35 +34,7 @@ void triRapide(int gauche, int droit , int *tab){
 
 };
 
-
-//Tri rapide a l'aide de la fonction partition et liste chainee
-//Fonction partition
-// Cellule *partitionListe(Cellule *gauche ,Cellule *droit){
-//     int pivot = droit->valeureur;
-//     Cellule *i = gauche;
-//     Cellule *j;
-//     int iteration = 0;
-//     for(j = gauche; j != droit; j = j->suivant){
-//         if(j->valeureur <= pivot){
-//             i = i->suivant;
-//             echange(&i->valeureur, &j->valeureur);
-//         }
-//     }
-//     echange(&i->suivant->valeureur, &droit->valeureur);
-//     return i->suivant;
-
-// };
-// //fonction tri rapide
-// void triRapideListe(Cellule *gauche, Cellule *droit){
-
-//     if(gauche != droit && gauche != NULL && droit != NULL){
-//         afficheListe(gauche);
-//         Cellule *pivot = partitionListe(gauche, droit);
-//         triRapideListe(gauche, pivot);
-//         triRapideListe(pivot->suivant, droit);
-//     }
-
-// };
+///Tri rapide a l'aide de la fonction partition et liste chainee
 
 Cellule * valeur_Indice(Cellule *liste, int indice)
 {
